@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a3e86cadfc8445d59402ff0ec2dd5c1b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+              <h3 align="center" style="font-size:16px"><b>New Development in Edgewater</b></h3>
+             
+    
+            <div class="folium-map" id="map_a3e86cadfc8445d59402ff0ec2dd5c1b" ></div>
+        
+</body>
+<script>    
+    
+            var map_a3e86cadfc8445d59402ff0ec2dd5c1b = L.map(
+                "map_a3e86cadfc8445d59402ff0ec2dd5c1b",
+                {
+                    center: [25.80083773846154, -80.19656725384615],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b4649e95effa4ebeb11d839ab28fea4b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+
+        function geo_json_b4d534c9206740c0aecb0ffe3fdd2c7f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b4d534c9206740c0aecb0ffe3fdd2c7f = L.geoJson(null, {
+                onEachFeature: geo_json_b4d534c9206740c0aecb0ffe3fdd2c7f_onEachFeature,
+            
+        });
+
+        function geo_json_b4d534c9206740c0aecb0ffe3fdd2c7f_add (data) {
+            geo_json_b4d534c9206740c0aecb0ffe3fdd2c7f
+                .addData(data)
+                .addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        }
+            geo_json_b4d534c9206740c0aecb0ffe3fdd2c7f_add({"bbox": [-80.20586611005817, 25.79542607670228, -80.19080337900381, 25.812409531478], "features": [{"bbox": [-80.20586611005817, 25.79542607670228, -80.19080337900381, 25.812409531478], "geometry": {"coordinates": [[[-80.19080337900381, 25.81133443551174, 0.0], [-80.19298831007633, 25.81135770128657, 0.0], [-80.19512252479356, 25.81137824731987, 0.0], [-80.19892922595785, 25.81157656278046, 0.0], [-80.20374007023555, 25.81202434180431, 0.0], [-80.2036265805565, 25.81215130143835, 0.0], [-80.20586611005817, 25.812409531478, 0.0], [-80.20548763672167, 25.79711795273139, 0.0], [-80.20302721252612, 25.79719534909167, 0.0], [-80.20305770066625, 25.79752718635091, 0.0], [-80.2005003514907, 25.79763909741169, 0.0], [-80.20042913093052, 25.79542607670228, 0.0], [-80.19462772009474, 25.79561264069082, 0.0], [-80.19080337900381, 25.81133443551174, 0.0]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            var marker_49452e83107242238f39a94d28ab130e = L.marker(
+                [25.8023173, -80.19426910000001],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_5426251b850f40ec99a0429db5a1f0cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_faf96d54dc644713afaaecc4c89089b0 = $(`<div id="html_faf96d54dc644713afaaecc4c89089b0" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>26 Northeast 27th Street</strong><br>     Developer(s): <strong><em>Ironstate Development and Brookfield Properties</strong></em><br><br>     <strong>Hoboken, New Jersey-based Ironstate led by brothers David and Michael Barry and Ironstate Development have proposed a 289 unit apartment complex at the former Art by God site — for which they paid $15.6 million. The addresses are 26 and 60 Northeast 27th Street, and 25 and 61 Northeast 26th Street.</strong></html>     </div>`)[0];
+            popup_5426251b850f40ec99a0429db5a1f0cb.setContent(html_faf96d54dc644713afaaecc4c89089b0);
+        
+
+        marker_49452e83107242238f39a94d28ab130e.bindPopup(popup_5426251b850f40ec99a0429db5a1f0cb)
+        ;
+
+        
+    
+    
+            var marker_1a4918e2689e47968e71489d50175719 = L.marker(
+                [25.8035697, -80.1989423],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_caec362bc71e467e897ae4cccc36257e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2fe84466e53464fa148ec9d2cfe1de6 = $(`<div id="html_b2fe84466e53464fa148ec9d2cfe1de6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>2825 Northwest Second Avenue</strong><br>     Developer(s): <strong><em>Gamma Real Estate</strong></em><br><br>     <strong>New York-based Gamma Real Estate took control of the site from The Collective after placing a credit bid. Current plans for the site call for 180 units, ranging from studios to six-bedroom apartments.</strong></html>     </div>`)[0];
+            popup_caec362bc71e467e897ae4cccc36257e.setContent(html_b2fe84466e53464fa148ec9d2cfe1de6);
+        
+
+        marker_1a4918e2689e47968e71489d50175719.bindPopup(popup_caec362bc71e467e897ae4cccc36257e)
+        ;
+
+        
+    
+    
+            var marker_69733f05b31a46a5ab8661d9c4091632 = L.marker(
+                [25.795655, -80.1953415],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_7cb4a13ca56a44afa0492cfd0628b2ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14c0d343353d46f793bf9511195d0ead = $(`<div id="html_14c0d343353d46f793bf9511195d0ead" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>2000 North Miami Avenue</strong><br>     Developer(s): <strong><em>Clearline Real Estate</strong></em><br><br>     <strong>Clearline plans for a mixed-use project likely including apartment rentals. The undeveloped property is zoned for more than 300 units.</strong></html>     </div>`)[0];
+            popup_7cb4a13ca56a44afa0492cfd0628b2ef.setContent(html_14c0d343353d46f793bf9511195d0ead);
+        
+
+        marker_69733f05b31a46a5ab8661d9c4091632.bindPopup(popup_7cb4a13ca56a44afa0492cfd0628b2ef)
+        ;
+
+        
+    
+    
+            var marker_52249cf9aeb74cdd851b8120140aad4f = L.marker(
+                [25.7957879, -80.1955335],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_9a88aca968404002b02e0514d1c8d284 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fe4ed245b48402d87a347fecbc28c5f = $(`<div id="html_5fe4ed245b48402d87a347fecbc28c5f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>2021 Northwest Miami Court</strong><br>     Developer(s): <strong><em>Clearline Real Estate</strong></em><br><br>     <strong>Clearline plans for a mixed-use project likely including apartment rentals. The undeveloped property is zoned for more than 300 units.</strong></html>     </div>`)[0];
+            popup_9a88aca968404002b02e0514d1c8d284.setContent(html_5fe4ed245b48402d87a347fecbc28c5f);
+        
+
+        marker_52249cf9aeb74cdd851b8120140aad4f.bindPopup(popup_9a88aca968404002b02e0514d1c8d284)
+        ;
+
+        
+    
+    
+            var marker_1a5ab032e36048d8a6e9b65ca34c5dc2 = L.marker(
+                [25.8028775, -80.1942598],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_90809e2ca42e454d884357397118592b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5123bf4d1f734a5ea5aa2f4649671327 = $(`<div id="html_5123bf4d1f734a5ea5aa2f4649671327" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>37 Northeast 27th Street</strong><br>     Developer(s): <strong><em>Fifield Companies</strong></em><br><br>     <strong>Fifield plans an eight-story, 210-unit apartment building with about 10,000 square feet of retail and a pedestrian peso. Construction is expected to finish in 2024.</strong></html>     </div>`)[0];
+            popup_90809e2ca42e454d884357397118592b.setContent(html_5123bf4d1f734a5ea5aa2f4649671327);
+        
+
+        marker_1a5ab032e36048d8a6e9b65ca34c5dc2.bindPopup(popup_90809e2ca42e454d884357397118592b)
+        ;
+
+        
+    
+    
+            var marker_df57f7e479a446ff818e5d301b76c15b = L.marker(
+                [25.8040987, -80.1958216],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_cc71833ec2d64078a9fa436351fe11ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f698d2e8c5184e0c85e1297479d225b1 = $(`<div id="html_f698d2e8c5184e0c85e1297479d225b1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>31 Northwest 29th Plaza</strong><br>     Developer(s): <strong><em>L&L Holding Company and Carpe Real Estate Partners</strong></em><br><br>     <strong>Two New York developers plan a mixed-use project that would span over 1 million square feet and include 509 units. </strong></html>     </div>`)[0];
+            popup_cc71833ec2d64078a9fa436351fe11ae.setContent(html_f698d2e8c5184e0c85e1297479d225b1);
+        
+
+        marker_df57f7e479a446ff818e5d301b76c15b.bindPopup(popup_cc71833ec2d64078a9fa436351fe11ae)
+        ;
+
+        
+    
+    
+            var marker_09bf819085d14a218a749947bd70ae91 = L.marker(
+                [25.8037379, -80.1930806],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_4e68bea8a9a8419182fd08261da1b273 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e130e185c5674d52b7062dced4591ab4 = $(`<div id="html_e130e185c5674d52b7062dced4591ab4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>94 Northeast 29th Street</strong><br>     Developer(s): <strong><em>Rilea Group and Promanas Group</strong></em><br><br>     <strong>Rilea Group and Promanas Group plan to build 127 rentals at 94 and 100 Northeast 29th street. Plans call for a 12-story project with a rooftop restaurant and a pool bar.</strong></html>     </div>`)[0];
+            popup_4e68bea8a9a8419182fd08261da1b273.setContent(html_e130e185c5674d52b7062dced4591ab4);
+        
+
+        marker_09bf819085d14a218a749947bd70ae91.bindPopup(popup_4e68bea8a9a8419182fd08261da1b273)
+        ;
+
+        
+    
+    
+            var marker_1b9ccc8336444c2bb54ea27567eef3df = L.marker(
+                [25.8023458, -80.1996831],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_95ce3bfcbda041a8a668fc805e9ca4ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e7487174e3f4e30a3423b2b6c8aab9e = $(`<div id="html_0e7487174e3f4e30a3423b2b6c8aab9e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>2700 Northwest Second Avenue</strong><br>     Developer(s): <strong><em>TriStar Capital, Related Group, Lndmrk Development, Tricera Capital</strong></em><br><br>     <strong>TriStar Capital, Related Group, Lndmrk Development and Tricera Capital plan to build more than 300 units. Construction could begin in August.</strong></html>     </div>`)[0];
+            popup_95ce3bfcbda041a8a668fc805e9ca4ca.setContent(html_0e7487174e3f4e30a3423b2b6c8aab9e);
+        
+
+        marker_1b9ccc8336444c2bb54ea27567eef3df.bindPopup(popup_95ce3bfcbda041a8a668fc805e9ca4ca)
+        ;
+
+        
+    
+    
+            var marker_8bcddf160b02464ea8a7e4fd4647bf48 = L.marker(
+                [25.8004148, -80.1988989],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_43590d82c9d647fe88378faa0b346192 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af13fdcee35e4a4cb5f2ba4499fcbacb = $(`<div id="html_af13fdcee35e4a4cb5f2ba4499fcbacb" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>2431 Northwest Second Avenue</strong><br>     Developer(s): <strong><em>PMG and Greybook Realty Partners</strong></em><br><br>     <strong>PMG and Greybook Realty Partners scored a $142.3 million construction loan for a 318-unit, 10-story mixed-use project.</strong></html>     </div>`)[0];
+            popup_43590d82c9d647fe88378faa0b346192.setContent(html_af13fdcee35e4a4cb5f2ba4499fcbacb);
+        
+
+        marker_8bcddf160b02464ea8a7e4fd4647bf48.bindPopup(popup_43590d82c9d647fe88378faa0b346192)
+        ;
+
+        
+    
+    
+            var marker_8b77e0e84d9f4a93867d5436eb08052f = L.marker(
+                [25.7974086, -80.1951569],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_f84b7984ca1f4fceb0f13da04161d7f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23a7ab409a4c4d81878393ef48262150 = $(`<div id="html_23a7ab409a4c4d81878393ef48262150" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>2130 North Miami Avenue</strong><br>     Developer(s): <strong><em>Related Group</strong></em><br><br>     <strong>Related Group plans to build a pair of 12-story buildings that will have 317 apartments and 534 parking spaces.</strong></html>     </div>`)[0];
+            popup_f84b7984ca1f4fceb0f13da04161d7f3.setContent(html_23a7ab409a4c4d81878393ef48262150);
+        
+
+        marker_8b77e0e84d9f4a93867d5436eb08052f.bindPopup(popup_f84b7984ca1f4fceb0f13da04161d7f3)
+        ;
+
+        
+    
+    
+            var marker_9021e6d27d604aea9130330e2771c611 = L.marker(
+                [25.797952, -80.195576],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_1fd23b01ae8e477f82bde523dba6f310 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b57d726f04cc4e41ae68ea5110b04926 = $(`<div id="html_b57d726f04cc4e41ae68ea5110b04926" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>38 Northwest 22nd Street</strong><br>     Developer(s): <strong><em>Related Group</strong></em><br><br>     <strong>Related Group plans to build a pair of 12-story buildings that will have 317 apartments and 534 parking spaces.</strong></html>     </div>`)[0];
+            popup_1fd23b01ae8e477f82bde523dba6f310.setContent(html_b57d726f04cc4e41ae68ea5110b04926);
+        
+
+        marker_9021e6d27d604aea9130330e2771c611.bindPopup(popup_1fd23b01ae8e477f82bde523dba6f310)
+        ;
+
+        
+    
+    
+            var marker_20871d48ef554c1b8350866ecfb8b5df = L.marker(
+                [25.8030284, -80.201072],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_09f385d2327a465eb9e8782af5ecb6fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9218d98237744fb3a8776a2777673867 = $(`<div id="html_9218d98237744fb3a8776a2777673867" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>2805 Northwest Third Avenue</strong><br>     Developer(s): <strong><em>Related Group</strong></em><br><br>     <strong>Related Group plans to build 306 apartments, mostly between 500 and 620 square feet. Arquitectonica is the architect.</strong></html>     </div>`)[0];
+            popup_09f385d2327a465eb9e8782af5ecb6fe.setContent(html_9218d98237744fb3a8776a2777673867);
+        
+
+        marker_20871d48ef554c1b8350866ecfb8b5df.bindPopup(popup_09f385d2327a465eb9e8782af5ecb6fe)
+        ;
+
+        
+    
+    
+            var marker_f9d1b1c48c334269b871f508f30ce131 = L.marker(
+                [25.801697, -80.197739],
+                {}
+            ).addTo(map_a3e86cadfc8445d59402ff0ec2dd5c1b);
+        
+    
+        var popup_6d7afc7f1ec74088a1e7f825e035a79b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2dbfdd9286264e74923f5fd23c97eea1 = $(`<div id="html_2dbfdd9286264e74923f5fd23c97eea1" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>      <br>______________________________________<br>     Address: <strong>129 Northwest 26th Street</strong><br>     Developer(s): <strong><em>Kushner</strong></em><br><br>     <strong>Kushner Companies is building a project that will have 152 apartments and 232 parking spaces, an outdoor pool deck and lounge. It's expected to be delivered in the third quarter of this year.</strong></html>     </div>`)[0];
+            popup_6d7afc7f1ec74088a1e7f825e035a79b.setContent(html_2dbfdd9286264e74923f5fd23c97eea1);
+        
+
+        marker_f9d1b1c48c334269b871f508f30ce131.bindPopup(popup_6d7afc7f1ec74088a1e7f825e035a79b)
+        ;
+
+        
+    
+    
+            map_a3e86cadfc8445d59402ff0ec2dd5c1b.fitBounds(
+                [25.80083773846154, -80.19656725384615],
+                {"maxZoom": 15}
+            );
+        
+</script>
